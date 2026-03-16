@@ -138,7 +138,7 @@ int main(int argc, char* argv[])
         // Read FSI controls
         IOdictionary dynamicMeshDict(
             IOobject("dynamicMeshDict", runTime.constant(), mesh,
-                IOobject::MUST_READ_IF_MODIFIED, IOobject::NO_WRITE));
+                     IOobject::MUST_READ_IF_MODIFIED, IOobject::NO_WRITE));
 
         // Default to explicit coupling if not specified
         word fsiCoupling = "explicit";
